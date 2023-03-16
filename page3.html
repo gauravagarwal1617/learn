@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking</title>
+
+</head>
+<body>
+    <h3 style="text-align: center;">Confirm your Booking</h3>
+    <div style="text-align: center;">
+        <form >
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" ><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" ><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" ><br>
+            <br><br>
+      </form> 
+      <button id="toggle">Pay Now</button>
+    </div>
+    <br>
+    <div id="scanner" style="text-align: center; display: none;">
+        
+        
+        <img src="nedevelopers.in.png" alt="qr code" width="200" height="200" >
+        <br>
+        <label>Google Pay</label><br>
+        <label for="transaction id">Transaction id:</label><br>
+        <input type="text" id="payid" name="payid" ><br>
+        <br>
+        <button onclick="myFunction()" >Submit</button>
+
+    </div>
+    <br>
+    <div id="thanks"style="text-align: center; display: none;"><h2>Thankyou <br> Our team will contact you at the earliest with all the details</h2></div>
+
+    <script>
+        const targetDiv = document.getElementById("scanner");
+        const btn = document.getElementById("toggle");
+        btn.onclick = function () {
+            targetDiv.style.display = "block";
+          }
+         
+    </script>
+    
+    <script>
+        function myFunction() {
+             document.getElementById("thanks").style.display = "block";
+            }
+
+    </script>
+    
+     
+
+    
+
+</body>
+</html>
