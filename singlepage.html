@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <title>Cab Services</title>
+        <style>
+         
+            h1 {
+              text-align: center;
+             
+            }
+            .center {
+  text-align: center;
+  border: 3px solid green;
+  padding-top: 30;
+}
+.res{
+            
+            border: 3px solid green;
+            padding-top: 30;
+            padding-bottom: 30;
+        }
+        .button{
+            text-align: center;
+            background-color: rgb(0, 245, 163);
+        }
+            </style>
+    </head>
+    <body><div id="page1">
+        <h1>Sikkim Cab Services</h1>
+        <div class="center" >
+        
+            <form  >
+                <label for="cars">From:</label>
+                <select name="cars" id="cars">
+                    <optgroup label="East Sikkim">
+                        <option value="gangtok">Gangtok</option>
+                        
+                      </optgroup>
+                  <optgroup label="North Sikkim">
+                    <option value="lachung">Lachung</option>
+                    <option value="lachen">Lachen</option>
+                  </optgroup>
+                  <optgroup label="South Sikkim">
+                    <option value="namchi">Namchi</option>
+                    <option value="ravangla">Ravangla</option>
+                  </optgroup>
+                  <optgroup label="West Sikkim">
+                    <option value="pelling">Pelling</option>
+                    
+                  </optgroup>
+                  <optgroup label="Airport">
+                    <option value="bagdogra">Bagdogra</option>
+                    <option value="pakyong">Pakyong</option>
+               </optgroup>
+               <optgroup label="Railway station">
+                <option value="njp">NJP</option>
+            </optgroup>
+                </select>
+                <label for="cars">To:</label>
+                <select name="cars" id="cars">
+                    <optgroup label="Airport">
+                        <option value="bagdogra">Bagdogra</option>
+                        <option value="pakyong">Pakyong</option>
+                    </optgroup>
+                    <optgroup label="Railway station">
+                        <option value="njp">NJP</option>
+                    </optgroup>
+                    <optgroup label="East Sikkim">
+                        <option value="gangtok">Gangtok</option>   
+                    </optgroup>
+                  <optgroup label="North Sikkim">
+                        <option value="lachung">Lachung</option>
+                        <option value="lachen">Lachen</option>
+                  </optgroup>
+                  <optgroup label="South Sikkim">
+                        <option value="namchi">Namchi</option>
+                        <option value="ravangla">Ravangla</option>
+                  </optgroup>
+                  <optgroup label="West Sikkim">
+                        <option value="pelling">Pelling</option>
+                  </optgroup>
+                </select>
+                <br><br>
+
+                <label for="date">Date:</label>
+                     <input type="date" id="date" name="date">
+                <br><br>
+                
+              </form>
+              <button onclick="myFunction1()" >Submit</button><br><br>
+        </div>
+</div>
+        <div class ="page2" id="page2" style="display: none;">
+          <h2 style="text-align: center;">Search Results</h2>
+          <div class="res">
+              <br>
+              <img src="https://findblueprints.s3.us-west-1.amazonaws.com/preview/1595608701016/Toyota%20Innova%20Microvan%202005" alt="car" width="160" height="120" style="float:left" >
+            
+              <label for="From" >From:</label>
+              <input type="text"  placeholder="Bagdogra">
+              
+              <label for="To">To:</label>
+              <input type="text"  placeholder="Gangtok">
+              <br><br>
+              <label for="Date">Date:</label>
+              <input type="text"  placeholder="23-03-2023"><br><br>
+              <label for="Vehicle">Vehicle:</label>
+              <input type="text"  placeholder="Innova">
+              <br>
+      
+              <h3 style="text-align: center; padding-right: 100;">Rs 3999.00</h3>
+              <div style="text-align:center">
+                <button class="button" onclick="myFunction2()" >Submit</button>
+                    
+                   </div>
+              <br>
+          </div>
+          <br>
+          <div class="res">
+              <br>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Y9HoLQTP4bkxq_C6XREk323EwjuP0rHTqg&usqp=CAU" alt="car" width="160" height="120" style="float:left" >
+            
+              <label for="From" >From:</label>
+              <input type="text"  placeholder="Bagdogra">
+              
+              <label for="To">To:</label>
+              <input type="text"  placeholder="Gangtok">
+              <br><br>
+              <label for="Date">Date:</label>
+              <input type="text"  placeholder="23-03-2023"><br><br>
+              <label for="Vehicle">Vehicle:</label>
+              <input type="text"  placeholder="Swift">
+              <br>
+      
+              <h3 style="text-align: center; padding-right: 100;">Rs 2999.00</h3>
+              <div style="text-align:center">
+                <button class="button" onclick="myFunction2()" >Submit</button><br>
+                   </div>
+              <br>
+          </div>
+          <br>
+          <div class="res">
+              <br>
+              <img src="https://windshieldstore.in/wp-content/uploads/2021/10/wagon-r-new.jpg" alt="car" width="160" height="120" style="float:left" >
+            
+              <label for="From" >From:</label>
+              <input type="text"  placeholder="Bagdogra">
+              
+              <label for="To">To:</label>
+              <input type="text"  placeholder="Gangtok">
+              <br><br>
+              <label for="Date">Date:</label>
+              <input type="text"  placeholder="23-03-2023"><br><br>
+              <label for="Vehicle">Vehicle:</label>
+              <input type="text"  placeholder="Wagan-r">
+              <br>
+      
+              <h3 style="text-align: center; padding-right: 100;">Rs 2499.00</h3>
+              <div style="text-align:center">
+                  
+                <button class="button" onclick="myFunction2()" >Submit</button><br>
+                   </div>
+              <br>
+          </div>
+      </div>
+
+      <div class="page3" id="page3" style="display: none;">
+        <h3 style="text-align: center;">Confirm your Booking</h3>
+        <div style="text-align: center;">
+            <form >
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" ><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="text" id="phone" name="phone" ><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" ><br>
+                <br><br>
+          </form> 
+          <button id="toggle">Pay Now</button>
+        </div>
+        <br>
+        <div id="scanner" style="text-align: center; display: none;">
+            
+            
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="qr code" width="200" height="200" >
+            <br>
+            <label>Google Pay</label><br>
+            <label for="transaction id">Transaction id:</label><br>
+            <input type="text" id="payid" name="payid" ><br>
+            <br>
+            <button onclick="myFunction()" >Submit</button>
+    
+        </div>
+        <br>
+       
+        </div>
+        <div id="thanks"style="text-align: center; display: none;"><br><br><br><br><h2>Thankyou <br> Our team will contact you at the earliest with all the details</h2></div>
+
+
+      <script>
+        function myFunction1() {
+            document.getElementById("page1").style.display = "none";
+             document.getElementById("page2").style.display = "block";
+            }
+
+    </script>
+    <script>
+        const targetDiv = document.getElementById("scanner");
+        const btn = document.getElementById("toggle");
+        btn.onclick = function () {
+            targetDiv.style.display = "block";
+          }
+         
+    </script>
+     <script>
+        function myFunction2() {
+            document.getElementById("page2").style.display = "none";
+             document.getElementById("page3").style.display = "block";
+            }
+
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("page3").style.display = "none";
+             document.getElementById("thanks").style.display = "block";
+            }
+
+    </script>
+    </body>
+</html>
+
